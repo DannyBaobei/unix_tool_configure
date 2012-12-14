@@ -1,0 +1,51 @@
+;; Object clang_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clang_test/"
+  :tables (list 
+   (semanticdb-table "hello.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("A" type
+               (:typedef ("_A" type (:type "struct") nil nil)
+                :superclasses "_A"
+                :type "typedef")
+                nil [58 100])
+            ("_A" type
+               (:members 
+                  ( ("value" variable (:type "int") (reparse-symbol classsubparts) [77 87])
+                    ("val" variable (:type "int") (reparse-symbol classsubparts) [88 96]))                  
+                :type "struct")
+                nil [58 100])
+            ("B" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [115 122])
+                    ("B" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("B" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [131 135])
+                    ("hello" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [144 165]))                  
+                :type "class")
+                nil [101 168])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [169 189])
+            ("main" function (:type "int") nil [190 355]))          
+    :file "hello.cc"
+    :pointmax 356
+    :fsize 382
+    :lastmodtime '(20659 16848)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!DannyWang!Danny!workdir!clang_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
