@@ -1,0 +1,7 @@
+python << PYTHONEOF
+def runScript():
+    script="\n".join([line for line in vim.current.buffer])
+    exec script
+vim.command("map <buffer><silent>,p :python runScript()<cr>")
+PYTHONEOF
+

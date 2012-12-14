@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='D:/DannyWang/workdir/MDRE_proxy_unit/src'
+let g:netrw_dirhist_2='D:/DannyWang'
+let g:netrw_dirhist_3='d:'
