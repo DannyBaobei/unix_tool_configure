@@ -1,0 +1,35 @@
+[gui]
+	recentrepo = D:/DannyWang/Danny/workdir/hello_mfc/hello
+	fontui = -family Consolas -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family Consolas -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+[guitool "Master"]
+	cmd = 
+[user]
+	email = DannyBaobei7@gmail.com
+	name = Danny
+
+
+[mergetool "kdiff"]
+	cmd = "kdiff3  $BASE $REMOTE $LOCAL -o $MERGED "
+  trustExitCode = false
+
+[mergetool "extMerge"]
+	cmd = "extMerge  $BASE $REMOTE $LOCAL  $MERGED "
+  trustExitCode = false
+		
+[mergetool "BComp"]		
+    cmd = "BComp $BASE $REMOTE  "
+
+[merge]
+	tool = kdiff3
+[diff]
+	external = BComp
+
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+	
